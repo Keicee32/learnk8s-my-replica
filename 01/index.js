@@ -7,6 +7,7 @@ const { marked } = require('marked')
 const app = express()
 const port = process.env.PORT || 3000
 const mongoURL = process.env.MONGO_URL || 'mongodb://localhost:27017/dev'
+//const mongoURL = process.env.MONGO_URL || process.env.MONGO_SVC_SERVICE_HOST
 
 async function initMongo() {
   console.log('Initialising MongoDB...')
